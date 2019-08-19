@@ -11,11 +11,11 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing/">>/etc/apk/repositori
 
 RUN apk update
 RUN apk add make automake gcc g++ subversion python3-dev
-RUN apk add py3-pandas
-RUN apk add py3-numpy
-RUN apk add py3-lxml
-RUN apk add py3-matplotlib
-RUN apk add py3-scikit-learn
+# RUN apk add py3-pandas
+# RUN apk add py3-numpy
+# RUN apk add py3-lxml
+# RUN apk add py3-matplotlib
+# RUN apk add py3-scikit-learn
 
 # RUN /opt/conda/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 # RUN /opt/conda/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
