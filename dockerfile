@@ -1,4 +1,4 @@
-FROM python:3.6.9-alpine3.10
+FROM python:3.7-alpine3.10
 # FROM nickgryg/alpine-pandas
 # FROM fastgenomics/pandas:0.22-p36-v3
 # FROM continuumio/anaconda3:2019.07
