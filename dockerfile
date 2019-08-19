@@ -2,17 +2,21 @@ FROM python:3.7.4-alpine3.10
 
 MAINTAINER lyqu@qq.com
 
-# RUN cat /etc/apk/repositories
-RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.10/main/">/etc/apk/repositories
-RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.10/community">>/etc/apk/repositories
-RUN echo "http://mirrors.ustc.edu.cn/alpine/edge/testing/">>/etc/apk/repositories
+RUN cat /etc/apk/repositories
+# RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.10/main/">/etc/apk/repositories
+# RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.10/community">>/etc/apk/repositories
+# RUN echo "http://mirrors.ustc.edu.cn/alpine/edge/testing/">>/etc/apk/repositories
+RUN echo "http://dl-3.alpinelinux.org/alpine/v3.10/community">>/etc/apk/repositories
+RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing/">>/etc/apk/repositories
 
+RUN apk update
+RUN apk add make automake gcc g++ subversion python3-dev
 RUN apk add py3-pandas
 RUN apk add py3-numpy
 RUN apk add py3-lxml
 RUN apk add py3-matplotlib
 RUN apk add py3-scikit-learn
-# RUN apk add g++ 
+
 # RUN /opt/conda/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 # RUN /opt/conda/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 # RUN /opt/conda/bin/conda config --set show_channel_urls yes
