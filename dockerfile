@@ -50,4 +50,9 @@ RUN pip install sklearn
 WORKDIR /worker
 # RUN ls 
 # RUN python getdailystocks.py
-# RUN python calculate.py
+RUN python -c "import pandas"
+RUN python -c "import numpy"
+RUN python -c "import tushare"
+RUN python -c "import statsmodels"
+RUN python -c "import matplotlib"
+RUN python -c "import sklearn"
