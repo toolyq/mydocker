@@ -1,0 +1,7 @@
+python3.7
+alpine
+pandas 
+numpy 
+matplotlib 
+scikit-learn sklearn 
+tushare
