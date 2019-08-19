@@ -21,9 +21,9 @@ RUN apk add py3-scikit-learn
 # RUN /opt/conda/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 # RUN /opt/conda/bin/conda config --set show_channel_urls yes
 
-RUN mkdir ~/.pip
-RUN echo "[global]">~/.pip/pip.conf
-RUN	echo "index-url = https://pypi.tuna.tsinghua.edu.cn/simple">>~/.pip/pip.conf
+# RUN mkdir ~/.pip
+# RUN echo "[global]">~/.pip/pip.conf
+# RUN	echo "index-url = https://pypi.tuna.tsinghua.edu.cn/simple">>~/.pip/pip.conf
 RUN pip install --upgrade pip
 
 # RUN pip install pandas
