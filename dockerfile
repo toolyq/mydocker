@@ -1,8 +1,6 @@
 FROM python:3.7.4-alpine3.10
-# FROM nickgryg/alpine-pandas
-# FROM fastgenomics/pandas:0.22-p36-v3
-# FROM continuumio/anaconda3:2019.07
-MAINTAINER lyqu  lyqu@qq.com
+
+MAINTAINER lyqu@qq.com
 
 # RUN cat /etc/apk/repositories
 RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.10/main/">/etc/apk/repositories
