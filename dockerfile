@@ -26,12 +26,11 @@ RUN apk add py3-scikit-learn
 # RUN	echo "index-url = https://pypi.tuna.tsinghua.edu.cn/simple">>~/.pip/pip.conf
 RUN pip install --upgrade pip
 
-# RUN pip install pandas
-# RUN pip install numpy
-# RUN apk add libstdc++
-# RUN /opt/conda/bin/conda install pandas
-# RUN apk add -q --progress libxml2-dev libxslt-dev libffi-dev
-# RUN pip install lxml
+RUN pip install pandas
+RUN pip install numpy
+
+RUN apk add -q --progress libxml2-dev libxslt-dev libffi-dev
+RUN pip install lxml
 
 RUN pip install tushare
 RUN pip install redis
@@ -40,12 +39,12 @@ RUN pip install threadpool
 RUN apk add lapack lapack-dev gfortran 
 RUN pip install statsmodels
 
-# RUN apk add freetype-dev
-# RUN pip install matplotlib
+RUN apk add freetype-dev
+RUN pip install matplotlib
 
-# RUN apk add  cython
-# RUN pip install Cython
-# RUN pip install sklearn
+RUN apk add  cython
+RUN pip install Cython
+RUN pip install sklearn
 
 # COPY $PWD /worker
 WORKDIR /worker
