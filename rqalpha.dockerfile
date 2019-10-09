@@ -15,6 +15,6 @@ RUN ./configure --prefix=/usr
 RUN make
 RUN make install
 RUN pip install ta-lib
-RUN pip install better-exceptions==0.1.8
+#RUN pip install better-exceptions==0.1.8
 
 RUN rqalpha version
