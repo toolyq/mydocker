@@ -6,7 +6,7 @@ RUN apk update
 RUN apk add git
 RUN pip install -U pip setuptools
 RUN pip install bcolz==1.2.0
-#RUN pip install git+https://github.com/rkern/line_profiler.git
+RUN pip install git+https://github.com/rkern/line_profiler.git
 RUN pip install --upgrade rqalpha
 
 WORKDIR /ws
