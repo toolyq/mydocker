@@ -1,4 +1,4 @@
-FROM lyqu/aiworker
+FROM lyqu/aiworker:20190819
 MAINTAINER lyqu@qq.com
 
 RUN apk update
