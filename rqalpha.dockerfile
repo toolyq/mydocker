@@ -17,4 +17,4 @@ RUN make install
 RUN pip install ta-lib
 RUN pip install better-exceptions==0.1.8
 
-rqalpha version
+RUN rqalpha version
