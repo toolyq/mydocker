@@ -3,6 +3,7 @@ MAINTAINER lyqu@qq.com
 
 RUN apk update
 RUN apk add build-base
+RUN apk add git
 RUN pip install -U pip setuptools cython
 RUN pip install bcolz==1.2.0
 RUN pip install git+https://github.com/rkern/line_profiler.git
