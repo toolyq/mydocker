@@ -2,7 +2,7 @@ FROM lyqu/aiworker
 MAINTAINER lyqu@qq.com
 
 RUN apk update
-RUN apk add build-base
+#RUN apk add build-base
 RUN apk add git
 RUN pip install -U pip setuptools
 RUN pip install bcolz==1.2.0
