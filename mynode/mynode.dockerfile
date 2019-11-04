@@ -12,7 +12,7 @@ RUN npm config set registry https://registry.npm.taobao.org
 RUN npm install
 
 RUN chmod 777 /data/app/web.sh 
-RUN chmod 777 /data/app/node_modules/.bin/* 
+# RUN chmod 777 /data/app/node_modules/.bin/* 
 
 EXPOSE 88
 ENTRYPOINT ["/data/app/web.sh"]
