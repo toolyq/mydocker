@@ -1,8 +1,10 @@
+var Mock = require("mockjs");
+
 module.exports=[{
     url: "/info",
     type:"get",
     run(req,res,next){
-        var rs = { uid: "@guid", name: "@name" }
+        var rs = Mock.mock({ uid: "@guid", name: "@name" });
         res.json(rs);
     }
 },{
