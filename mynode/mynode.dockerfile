@@ -4,5 +4,6 @@ MAINTAINER lyqu@qq.com
 
 WORKDIR /
 
-RUN npm config set registry https://registry.npm.taobao.org 
 RUN npm install -g sqlite3
+RUN npm config set registry https://registry.npm.taobao.org 
+
