@@ -1,6 +1,10 @@
 FROM lyqu/aiworker:20190819
 MAINTAINER lyqu@qq.com
 
+RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.10/main/">/etc/apk/repositories
+RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.10/community">>/etc/apk/repositories
+RUN echo "http://mirrors.ustc.edu.cn/alpine/edge/testing/">>/etc/apk/repositories
+
 RUN apk update
 #RUN apk add build-base
 RUN apk add git
