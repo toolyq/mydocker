@@ -28,6 +28,6 @@ cp simsun.ttc /usr/share/fonts/win/simsun.ttc
 RUN chmod 777 /usr/share/fonts/win/simsun.ttc
 RUN apk add font-adobe-100dpi
 
-fc-cache -f
-fc-list
+RUN fc-cache -f
+RUN fc-list
 RUN rqalpha version
