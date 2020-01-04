@@ -24,7 +24,7 @@ RUN pip install ta-lib
 RUN pip install baostock
 #RUN pip install better-exceptions==0.1.8
 
-cp simsun.ttc /usr/share/fonts/win/simsun.ttc
+copy simsun.ttc /usr/share/fonts/win/simsun.ttc
 RUN chmod 777 /usr/share/fonts/win/simsun.ttc
 RUN apk add font-adobe-100dpi
 
